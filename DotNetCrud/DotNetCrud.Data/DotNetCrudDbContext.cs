@@ -11,6 +11,11 @@ namespace DotNetCrud.Data
         {
 
         }
+
+        public DbSet<Product> Products{ get; set; }
+        public DbSet<ProductGroup> ProductGroup{ get; set; }
+        public DbSet<Purchase> Purchases{ get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             //Write Fluent API configurations here

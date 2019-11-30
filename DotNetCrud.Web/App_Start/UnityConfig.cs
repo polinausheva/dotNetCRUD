@@ -29,6 +29,7 @@ namespace DotNetCrud.Web
             container.RegisterType<IGenericEFDataService<ProductGroup>, GenericEFDataService<ProductGroup>>(new TransientLifetimeManager());
             container.RegisterType<IGenericEFDataService<Product>, GenericEFDataService<Product>>(new TransientLifetimeManager());
             container.RegisterType<IGenericEFDataService<Purchase>, GenericEFDataService<Purchase>>(new TransientLifetimeManager());
+            container.RegisterType<IGenericEFDataService<Faq>, GenericEFDataService<Faq>>(new TransientLifetimeManager());
 
 
             container.RegisterType<DbContext, ApplicationDbContext>(new TransientLifetimeManager());

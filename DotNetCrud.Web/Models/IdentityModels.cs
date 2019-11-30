@@ -40,6 +40,7 @@ namespace DotNetCrud.Web.Models
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductGroup> ProductGroup { get; set; }
         public DbSet<Purchase> Purchases { get; set; }
+        public DbSet<Faq> Faqs { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

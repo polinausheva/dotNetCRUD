@@ -181,11 +181,13 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\FaqsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\ProductGroupsController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\PurchasesController.cs" />
+    <Compile Include="Data\Models\Faq.cs" />
     <Compile Include="Data\Models\IDataTableObject.cs" />
     <Compile Include="Data\Models\Product.cs" />
     <Compile Include="Data\Models\ProductGroup.cs" />
@@ -206,6 +208,10 @@
     <Compile Include="Migrations\201911291401342_ProductUniqueLimitedName.cs" />
     <Compile Include="Migrations\201911291401342_ProductUniqueLimitedName.Designer.cs">
       <DependentUpon>201911291401342_ProductUniqueLimitedName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911301902041_FaqsAdded.cs" />
+    <Compile Include="Migrations\201911301902041_FaqsAdded.Designer.cs">
+      <DependentUpon>201911301902041_FaqsAdded.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -285,6 +291,11 @@
     <Content Include="Views\Purchases\Details.cshtml" />
     <Content Include="Views\Purchases\Edit.cshtml" />
     <Content Include="Views\Purchases\Index.cshtml" />
+    <Content Include="Views\Faqs\Create.cshtml" />
+    <Content Include="Views\Faqs\Delete.cshtml" />
+    <Content Include="Views\Faqs\Details.cshtml" />
+    <Content Include="Views\Faqs\Edit.cshtml" />
+    <Content Include="Views\Faqs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -308,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201911291401342_ProductUniqueLimitedName.resx">
       <DependentUpon>201911291401342_ProductUniqueLimitedName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911301902041_FaqsAdded.resx">
+      <DependentUpon>201911301902041_FaqsAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
